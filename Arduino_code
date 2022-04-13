@@ -122,7 +122,7 @@ void playTetris()      //gesture recongnition
         
       //Tilting the gun left with touch
       if(accAngleY <= -50){
-        Keyboard.press('w');
+        Keyboard.press('w');              //Here we press w instead of z because we use an AZERTY keyboard while the library has been done for QWERTY
         Keyboard.release('w');
         delay(400);
       }
